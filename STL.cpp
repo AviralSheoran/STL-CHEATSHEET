@@ -55,12 +55,12 @@ int main () {
     /* 
     * Pairs 
     
-    pair<int,string> p;
+    pair<int,string> p; // Declaration
     
-    // Declaration 
+    // Taking Input
     // p = make_pair(12, "HOLA"); // ? Long form - So shouldn't used this 
 
-    p = {123, "Hello"};
+    p = {123, "Hello"}; // ? USe this one
     cout << p.first << " " << p.second << endl; // Output
 
     // pair <int,string> p1 = p; // Copying pair p to p1
@@ -69,9 +69,38 @@ int main () {
     p1.first = 3;// This will only work if the declared pair is reference pair
 
     cout << p1.first << endl;
+    
+
+   * Vectors - Are like Array (Continous Memory Blocks) but they are dynamic (i.e. we can change its size)
+    vector <int> v;
+
+    int n;
+    cin >> n;
+
+    for (int i =0; i<n; ++i) { // Taking input
+        int x;
+        cin >> x;
+        v.push_back(x);
+    }
+
+    // vector <int> v(10, 3); // ? This will declare a vector of size 10 having all elements as 3
+
+    
+    v.push_back(4); // Push the value at the end of vector
+    v.pop_back(); // Removes the last element from vector 
+
+    // ! IMPORTANT
+    // ? There are two method to make a copy a vector
+        // ? 1. Direct Copy - O(n)
+                vector <int> v1 = v; // Make a new copy of v and the changes in v1 won't have any effect on v
+
+        // ? 2. Reference Copy - O(1)
+                vector <int> &v1 = v; // Make a new vector v1 and if there is a change in v1 then it will also be reflected in v
     */
 
-   
+
+        
+
 
 
     cout << endl;
