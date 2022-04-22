@@ -161,6 +161,36 @@ int main()
        printVec(v[i]);
    }  */
 
+    /*
+    * Iterators
+
+     vector<int> v = {2, 3, 5, 6, 7};
+     vector<int>::iterator it = v.begin();
+
+     for (it = v.begin(); it != v.end(); ++it)
+     {
+         cout << *it << endl;
+     }
+
+     // ? it++ and it +1 are completely two different things, Let me Explain
+     // ? it++ is used for next iteration and it+1 is used for next location
+     // ? In the case of containers and pairs both will work the same as vector is continous
+     // ? But in the case of map and sets the it++ will point to the next iteration and it+1 will point to the next location which may be invalid
+     // ? As in the maps and set they aren't continous like vectors in memory
+
+     vector<pair<int, int>> v_p = {{1, 2}, {3, 4}, {5, 6}, {7, 8}};
+     vector<pair<int, int>>::iterator it = v_p.begin();
+
+     for (it = v_p.begin(); it != v_p.end(); ++it)
+     {
+         cout << (*it).first << " " << (*it).second << endl;
+         // ? OR
+         cout << (it->first) << " " << (it->second) << endl;
+     }
+
+     // (*it).first <=> it->first
+     */
+
     cout << endl;
     return 0;
 }
