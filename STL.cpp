@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main () {
-
     /* 
     * STL Parts - 
                 1. Containers
@@ -50,7 +48,32 @@ int main () {
     * 4. Functors - Classes which can act as functions  
 
     */
-    
 
+
+int main () {
+
+    /* 
+    * Pairs 
+    
+    pair<int,string> p;
+    
+    // Declaration 
+    // p = make_pair(12, "HOLA"); // ? Long form - So shouldn't used this 
+
+    p = {123, "Hello"};
+    cout << p.first << " " << p.second << endl; // Output
+
+    // pair <int,string> p1 = p; // Copying pair p to p1
+    pair <int,string> &p1 = p; // Refrancing pair p to p1
+
+    p1.first = 3;// This will only work if the declared pair is reference pair
+
+    cout << p1.first << endl;
+    */
+
+   
+
+
+    cout << endl;
     return 0;
 }
