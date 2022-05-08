@@ -208,6 +208,38 @@ int main()
     }
     */
 
+    /*
+    * Ordered Maps
+
+    map<int, string> m; // Declaration
+
+    // Time Complexity - 0(Logn)
+    m[1] = "abc"; // Insertion
+    m[5] = "adc";
+    m[3] = "akc";
+    m.insert({4, "afg"}); // Another Insertion method
+
+    for (auto &it : m) // Time Complexity - 0(logn)
+    {
+        cout << it.first << " " << it.second << endl;
+    }
+    cout << endl;
+
+    TODO: m.find() and m.erase()
+    auto it = m.find(3); // find the pair and assign it to iterator
+    m.erase(it);         // Erases the entire pair
+
+    for (auto &it : m) // Time Complexity - 0(logn)
+    {
+        cout << it.first << " " << it.second << endl;
+    }
+
+    m.clear();         // Clears/deletes the map
+    for (auto &it : m) // Time Complexity - 0(logn)
+    {
+        cout << it.first << " " << it.second << endl;
+    }
+ */
     cout << endl;
     return 0;
 }
