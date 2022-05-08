@@ -60,7 +60,7 @@ int main()
     // Taking Input
     // p = make_pair(12, "HOLA"); // ? Long form - So shouldn't used this
 
-    p = {123, "Hello"}; // ? USe this one
+    p = {123, "Hello"}; // ? Use this one
     cout << p.first << " " << p.second << endl; // Output
 
     // pair <int,string> p1 = p; // Copying pair p to p1
@@ -190,6 +190,13 @@ int main()
 
      // (*it).first <=> it->first
      */
+
+    // TODO:Range Based Iterators
+    vector<int> v = {1, 2, 3, 5, 5, 3};
+    for (int value : v)
+    {
+        cout << value << endl;
+    }
 
     cout << endl;
     return 0;
