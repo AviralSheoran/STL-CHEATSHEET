@@ -191,12 +191,22 @@ int main()
      // (*it).first <=> it->first
      */
 
-    // TODO:Range Based Iterators
+    /*
+    TODO:Range Based Iterators
     vector<int> v = {1, 2, 3, 5, 5, 3};
     for (int value : v)
     {
         cout << value << endl;
     }
+
+    // ? We could use only auto keyword instead of range based loops
+    TODO: Auto Keyword
+    vector<pair<int, int>> v_p = {{1, 2}, {2, 3}};
+    for (auto &it : v_p)
+    {
+        cout << it.first << " " << it.second << endl;
+    }
+    */
 
     cout << endl;
     return 0;
