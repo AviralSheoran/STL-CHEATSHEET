@@ -248,6 +248,19 @@ int main()
     unordered_map<string, int> m;
      ! And everything is same as ordered map
  */
+
+    /*
+    * Ordered Sets
+    set<string> s; // Delaration
+
+    * Unordered sets
+    ? Same as Unordered Maps
+
+    * Multi Sets
+    multiset<string> s; // Declaration
+    ? Used instead of Priority Queues
+    */
+
     cout << endl;
     return 0;
 }
